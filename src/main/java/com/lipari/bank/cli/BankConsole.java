@@ -29,7 +29,7 @@ public class BankConsole {
         DatabaseManager.initializeSchema();
         insertSampleData();
         loadData();
-        printReport();
+        printReportDetaiiled();
     }
 
     private void insertSampleData() throws SQLException {
@@ -88,7 +88,6 @@ public class BankConsole {
         }
     }
 
-<<<<<<< HEAD
     /**
      * Stampa il riepilogo dei clienti.
      *
@@ -109,13 +108,12 @@ public class BankConsole {
         System.out.printf("  Totale clienti: %d  |  Totale conti: %d%n",
                 customers.size(), accounts.size());
     }
-=======
     /**
      * Stampa il riepilogo dei clienti.
      *
      * <p>Versione avanzata — ordinata per cognome, mostra il saldo totale.
      */
-    public void printReport() {
+    public void printReportDetaiiled() {
         System.out.println("\n── Report Avanzato ──────────────────────────────────────────────────");
         System.out.printf("%-20s %-25s %12s %10s%n",
                 "Cod. Fiscale", "Nome", "Saldo Tot.", "N. Conti");
@@ -137,5 +135,4 @@ public class BankConsole {
         System.out.printf("  Totale clienti: %d  |  Totale conti: %d%n",
                 customers.size(), accounts.size());
     }
->>>>>>> feature/advanced-reporting
 }
